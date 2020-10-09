@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(8,40,37);
+    background: linear-gradient(0deg, rgba(8,40,37,1) 3%, rgba(7,40,42,1) 38%, rgba(8,75,77,1) 69%, rgba(4,110,109,1) 99%);
+}
+
+#container {
+    flex: 1 0 auto; /*flex-grow, flex-shrink, flex-basic*/
+    /*position: fixed; /*this paragraph makes background on the whole screen, regardless of a screen size
+    height:100%;*/
+    margin: 10%;
+    padding: 0px;
+    /*background-color: rgb(12,74,84);
+    background: linear-gradient(0deg, rgba(12,74,84,1) 0%, rgba(9,104,121,1) 54%, rgba(39,143,164,1) 100%);*/
+    
+}
+header{
+  position: relative;
+  height: 15%;
+}
+#logo {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: 10vw;
+    font-weight: bolder;
+    color: #DBF2E8;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+/*Toggle Switch*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    align-content: center;
+    display: block;
+    width: 60px;
+    height: 24px;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 24px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*End of Toggle Switch*/
+
+section{
+  background-color: rgba(27,104,95,0.6);
+  height: 60%;
+}
+
+textarea {
+    background-color: #95B0B1;
+    width: 86%;
+    height: 75%;
+    margin: 7%;
+    margin-bottom: 3%;
+}
+
+button {
+    display: block;
+    float: right;
+    margin-right: 7%;
+    margin-bottom: 7%;
+    padding: 5px;
+    width: 60px;
+}
+footer {
+    color: white;
+    flex-shrink: 0;
+    background-color: black;
+    font-size: 4vw;
+    padding: 2%;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+
+  header{
+    position: relative;
+    height: 15%;
+  }  
+  #logo {
+      position: absolute;
+      font-size: 5vw;
+      font-weight: bolder;
+      color: #DBF2E8;
+      text-align: center;
+      margin-top: 4%;
+      margin-bottom: 4%;
+        
+    }
+    footer {
+        font-size: 1.5vw;
+        padding: 1%;
+    }
+
+ }
