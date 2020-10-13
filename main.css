@@ -31,14 +31,11 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 25%;
+  height: 24%;
   margin: 5% 0;
 }
 
 #logo {
-  /*margin-top: 5%;
-  margin-bottom: 15%;
-  box-sizing: border-box;*/
   font-size: 10vw;
   font-weight: bolder;
   color: #DBF2E8;
@@ -47,15 +44,26 @@ header{
 }
 /*Toggle Switch*/
 #darkMode {
+  position: relative;
   display: flex;
-  
+  justify-content: flex-end;
+  height: 20%;
+}
+#nameOfMode{
+  display: block;
+  margin-right: 60px;
+  font-size: 15px;
+  color: #DBF2E8;
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 /* The switch - the box around the slider */
 .switch {
   position: absolute;
   width: 50px; /*here I can change the background of the button*/
   height: 22px;
-  margin-top: -22px;
+  margin-left: -50px;
 }
 /* Hide default HTML checkbox */
 .switch input {display: none}
