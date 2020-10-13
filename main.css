@@ -56,7 +56,6 @@ header{
   color: #DBF2E8;
   font-weight: 100;
   margin-top: 3px;
-  
 }
 /* The switch - the box around the slider */
 .switch {
@@ -125,6 +124,7 @@ textarea {
   width: 86%;
   height: 75%;
   margin: auto;
+  margin-bottom: 3%;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -162,24 +162,20 @@ footer {
   #logo {
     font-size: 7vw;       
   }
-  section{
-    height: 63%;
+
+  #nameOfMode{
+    font-size: 20px;
+    margin-top: 0;
   }
-  textarea {
-    width: 88%;
-    margin: 6%;
-    margin-bottom: 3%;
-  }
+  
   button {
     font-size: 3vw;
-    padding: 5px;
     width: 15%;  
   }
   footer {
     font-size: 3vw;
-    padding: 1%;
+    padding: 2%;
   }
-
 }
 
 @media (min-width: 1000px) {
@@ -187,19 +183,27 @@ footer {
    margin: 3% 7%;
   }
   header{
-    height: 20%;
-    margin: 1% 0;
-  }  
+    height: 16%;
+    margin: 3% 0;
+  } 
  #logo {
     font-size: 4vw;
   }
+  #nameOfMode{
+    margin-right: 85px;
+    font-size: 20px;
+    
+    font-weight: 100;
+    margin-top: 3px;
+  }
   .switch{
-    width: 70px; /*here I can change the background of the button*/
-    height: 32px
+    width: 65px; /*here I can change the background of the button*/
+    height: 28px;
+    margin-left: -65px;
   }
   .slider:before {
-    height: 24px; /*in this place I should change the size of the button*/
-    width: 24px;
+    height: 19px; /*in this place I should change the size of the button*/
+    width: 19px;
     left: 5px;
     bottom: 4px;
   }
@@ -208,10 +212,8 @@ footer {
     -ms-transform: translateX(35px);
     transform: translateX(35px); /*position which slider:before moves*/
   }
-  section{
-    height: 63%;
-  }
-  textarea {
+  
+  /*textarea {
     width: 88%;
     margin: 3% 6%;
     margin-bottom: 1%;
@@ -221,10 +223,10 @@ footer {
     border-radius: 10px;
     padding: 5px;
     width: 13%;  
-  }
+  }*/
   footer {
-    font-size: 1.5vw;
-    padding: 1%;
+    font-size: 1vw;
+    padding: 0.5%;
   }
 }
     
