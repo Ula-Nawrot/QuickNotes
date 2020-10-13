@@ -24,13 +24,21 @@ body {
   /*background-color: rgb(12,74,84);
   background: linear-gradient(0deg, rgba(12,74,84,1) 0%, rgba(9,104,121,1) 54%, rgba(39,143,164,1) 100%);*/
 }
-header{
-  position: relative;
-  height: 15%;
+h2 {
+  display: block;
 }
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25%;
+  margin: 5% 0;
+}
+
 #logo {
-  margin-top: 5%;
+  /*margin-top: 5%;
   margin-bottom: 15%;
+  box-sizing: border-box;*/
   font-size: 10vw;
   font-weight: bolder;
   color: #DBF2E8;
@@ -38,13 +46,16 @@ header{
   text-align: center;
 }
 /*Toggle Switch*/
-
+#darkMode {
+  display: flex;
+  
+}
 /* The switch - the box around the slider */
 .switch {
   position: absolute;
-  display: block;
   width: 50px; /*here I can change the background of the button*/
   height: 22px;
+  margin-top: -22px;
 }
 /* Hide default HTML checkbox */
 .switch input {display: none}
@@ -96,6 +107,7 @@ section{
   background-color: rgba(27,104,95,0.6);
   height: 60%;
   border-radius: 10px;
+  
 }
 
 textarea {
