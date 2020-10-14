@@ -162,15 +162,19 @@ footer {
   #logo {
     font-size: 7vw;       
   }
-
   #nameOfMode{
     font-size: 20px;
     margin-top: 0;
   }
-  
+  section{
+    height: 65%;
+  }
+  textarea {
+    margin-bottom: 2%;
+    height: 70%;
+  }
   button {
     font-size: 3vw;
-    width: 15%;  
   }
   footer {
     font-size: 3vw;
@@ -178,7 +182,7 @@ footer {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
  #container {
    margin: 3% 7%;
   }
@@ -187,7 +191,7 @@ footer {
     margin: 3% 0;
   } 
  #logo {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   #nameOfMode{
     margin-right: 85px;
@@ -213,20 +217,84 @@ footer {
     transform: translateX(35px); /*position which slider:before moves*/
   }
   
-  /*textarea {
+  textarea {
     width: 88%;
     margin: 3% 6%;
     margin-bottom: 1%;
+  }
+  #saveButton{
+    width: 88%;
+    margin-bottom: 3%;
   }
   button {
     font-size: 2vw;
     border-radius: 10px;
     padding: 5px;
     width: 13%;  
-  }*/
+  }
   footer {
-    font-size: 1vw;
-    padding: 0.5%;
+    font-size: 2vw;
+    padding: 1.5%;
   }
 }
+
+@media (min-width: 1000px) {
+  #container {
+    margin: 3% 7%;
+   }
+   header{
+     height: 16%;
+     margin: 3% 0;
+     display: flex;
+     flex-direction: row;
+   } 
+  #logo {
+     font-size: 4vw;
+     justify-content: flex-end;
+     flex: 1;
+   }
+   #darkMode {
+    flex: 1;
+    justify-content: flex-end;
+  }
+   #nameOfMode{
+     margin-right: 85px;
+     font-size: 20px;
+     
+     font-weight: 100;
+     margin-top: 3px;
+   }
+   .switch{
+     width: 65px; /*here I can change the background of the button*/
+     height: 28px;
+     margin-left: -65px;
+   }
+   .slider:before {
+     height: 19px; /*in this place I should change the size of the button*/
+     width: 19px;
+     left: 5px;
+     bottom: 4px;
+   }
+   input:checked + .slider:before {
+     -webkit-transform: translateX(35px);
+     -ms-transform: translateX(35px);
+     transform: translateX(35px); /*position which slider:before moves*/
+   }
+   
+   /*textarea {
+     width: 88%;
+     margin: 3% 6%;
+     margin-bottom: 1%;
+   }
+   button {
+     font-size: 2vw;
+     border-radius: 10px;
+     padding: 5px;
+     width: 13%;  
+   }*/
+   footer {
+     font-size: 1vw;
+     padding: 0.5%;
+   }
+ }
     
