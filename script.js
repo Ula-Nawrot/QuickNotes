@@ -5,8 +5,12 @@ function myFunction() {
       var newDiv = document.createElement("div");
       var parent = document.getElementById("head"); 
       var my_div = document.getElementById("logo");
+      
+      newDiv.setAttribute("id", "aditional");
+      
       parent.insertBefore(newDiv, my_div);
-      console.log('inside3')
+      console.log('inside3');
+      
     }
 }
 
