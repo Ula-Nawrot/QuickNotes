@@ -127,9 +127,14 @@ textarea {
   margin: auto;
   margin-bottom: 3%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
+  /* removing focus */
+  overflow: auto;
+  outline: none;
 }
+
+/* changing a color of a text in textarea which appears before writing something */
 ::placeholder {
   color:#1b685f;
   opacity: 1; /* Firefox */
