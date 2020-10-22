@@ -121,13 +121,26 @@ section{
 }
 
 textarea {
-  background-color: #95B0B1;
+  background-color: rgba(217, 223, 223, 0.521);;
   width: 86%;
   height: 75%;
   margin: auto;
   margin-bottom: 3%;
   box-sizing: border-box;
+  padding: 20px;
   border-radius: 10px;
+}
+::placeholder {
+  color:#1b685f;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:#1b685f;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #1b685f;
 }
 
 #saveButton{
