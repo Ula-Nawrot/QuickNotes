@@ -25,7 +25,7 @@ body {
   flex: 1 0 auto; /*flex-grow, flex-shrink, flex-basic*/
   /*position: fixed; /*this paragraph makes background on the whole screen, regardless of a screen size
   height:100%;*/
-  margin: 10%;
+  margin: 15% 10%;
   padding: 0px;
   /*background-color: rgb(12,74,84);
   background: linear-gradient(0deg, rgba(12,74,84,1) 0%, rgba(9,104,121,1) 54%, rgba(39,143,164,1) 100%);*/
@@ -120,7 +120,7 @@ input:checked + .slider:before {
 /*End of Toggle Switch*/
 
 section {
-  min-height: 400px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -190,6 +190,9 @@ footer {
 }
 
 @media (min-width: 500px) {
+  #container {
+    margin: 7% 7%;
+   }
   #logo {
     font-size: 7vw;
   }
@@ -216,7 +219,7 @@ footer {
 
 @media (min-width: 700px) {
   #container {
-    margin: 3% 7%;
+    margin: 5% 7%;
   }
   header {
     height: 16%;
@@ -306,7 +309,7 @@ footer {
     height: 40px;
   }
   footer {
-    font-size: 18px;
+    font-size: 15px;
     padding: 0.8%;
   }
 }
