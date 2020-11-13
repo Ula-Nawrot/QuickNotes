@@ -1,4 +1,4 @@
-function myFunction() {
+function adddiv() {
   console.log('inside')
   if (window.matchMedia("(min-width: 1000px)").matches) {
     console.log('inside2')
@@ -14,7 +14,7 @@ function myFunction() {
   }
 }
 
-myFunction()
+adddiv()
 
 const btn = document.querySelector(".btn-toggle");
 const theme = document.querySelector("#theme-link");

@@ -95,7 +95,7 @@ header {
   height: 16px; /*in this place I should change the size of the button*/
   width: 16px;
   left: 4px;
-  bottom: 3px;
+  bottom: 2px;
   background-color: #ff8847;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -188,6 +188,13 @@ footer {
   padding: 2%;
   text-align: center;
 }
+#ula{
+  text-decoration: none;
+  color: wheat;;
+}
+#ula:hover{
+  color: #42342e;
+}
 
 @media (min-width: 500px) {
   #container {
@@ -198,8 +205,9 @@ footer {
   }
   #nameOfMode {
     font-size: 20px;
-    margin-top: 0;
+    top: 0;
   }
+
   section {
     height: 65%;
   }
